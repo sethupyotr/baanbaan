@@ -2,6 +2,9 @@
 body {
     background-color: #fff;
 }
+body.modal-open {
+    padding-right: 0!important;
+}
 .pull-right {
     float: right;
 }
@@ -45,6 +48,24 @@ body {
 .btn{
     border-radius: 1px;
 }
+
+.signInDiv,
+.showCreateAccountDiv,
+.showThanksDiv{
+
+    position: absolute;
+    transform: translate3d(-90px, 51px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+
+}
+.signInDiv.show,
+.showCreateAccountDiv.show,
+.showThanksDiv.show{
+
+}
+
 
 /* Mobile Nav */
 .menu-area{
@@ -453,12 +474,12 @@ body {
 #account i:hover{
     color: #999;
 }
-#account #signup{
+#account .signup{
     align-self: center;
     padding-right: 5px;
     text-align: right;
 }
-#account #signup a.dropdown-toggle{
+#account .signup a.dropdown-toggle{
     color: #999;
     font-size: 14px;
     font-weight: 500;
@@ -466,14 +487,17 @@ body {
     cursor: pointer;
     padding: 15px;
 }
-#account #signup a.dropdown-toggle::after{
+#account .signup a.dropdown-toggle::after{
     display: none;
 }
-#account #signup .show a.dropdown-toggle, #account #signup .show a.dropdown-toggle i{
+#account .signup .show a.dropdown-toggle,
+#account .signup .show a.dropdown-toggle i,
+#account .signup.actv a.dropdown-toggle,
+#account .signup.actv a.dropdown-toggle i{
     background-color: #555;
     color: #fff;
 }
-#account #signup .dropdown-menu{
+#account .signup .dropdown-menu{
     background-color: #555;
     padding: 15px;
     color: #fff;
@@ -481,45 +505,68 @@ body {
     margin-right: -1px;
 }
 
-#account #signup h1{
+#account .signup h1{
     margin: 0 0 10px 0;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
 }
-#account #signup .form-group{
+#account .signup .form-group{
     margin-bottom: 10px;
 }
-#account #signup label{
+#account .signup label{
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-#account #signup label a{
+#account .signup label a{
     color: #007bff;
     font-size: 11px;
     text-decoration: none;
 }
-#account #signup .form-control{
+#account .signup .form-control{
     font-size: 13px;
     width: 200px;
 }
-#account #signup .btn-panel{
+#account .signup .btn-panel{
     text-align: center;
     margin-top: 10px;
 }
-#account #signup .btn-link{
+
+#account .signup .btn-panel p{
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+#account .signup .btn-panel p a{
+    text-decoration: none;
+}
+
+#account .signup .thanks-signup{
+    margin:0;
+    width: 200px;
+}
+#account .signup .thanks-signup p{
+    margin-bottom: 10px;
+}
+#account .signup .thanks-signup p:last-child{
+    margin-bottom: 0;
+}
+
+#account .signup .btn-link{
     color: #fff;
     font-size: 13px;
     text-decoration: none;
 }
-#account #signup .btn-link:hover{
+#account .signup .btn-link:hover{
     color: #ccc;
 }
 
-#account #signup .btn-group.mob{
+#account .signup .btn-group.mob{
     display: none;
 }
 
@@ -584,10 +631,10 @@ body {
         flex: auto;
         margin-right: 20px;
     }
-    #account #signup .btn-group{
+    #account .signup .btn-group{
         display: none;
     }
-    #account #signup .btn-group.mob{
+    #account .signup .btn-group.mob{
         display: block;
         margin-right: 0;
     }
@@ -595,25 +642,26 @@ body {
         margin-right: 10px;
     }
 
-    #account #signup a.dropdown-toggle, #account #signup a.dropdown-toggle i{
+    #account .signup a.dropdown-toggle, #account .signup a.dropdown-toggle i{
 
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
     }
-    #account #signup a.dropdown-toggle{
+    #account .signup a.dropdown-toggle{
         width: 51px;
         text-align: center;
         display: inline-flex;
         justify-content: center;
 
     }
-    #account #signup .dropdown-menu{
+    #account .signup .dropdown-menu{
         margin-right: 0;
     }
     .nav-pad-quick ul.quickmain li a{
         font-size: 11px;
     }
+
 }
 
 @media only screen and (max-width: 567px) {
@@ -623,7 +671,7 @@ body {
     .badge-panel h4{
         display: none;
     }
-    
+
     .nav-pad-quick ul.quickmain li{
         padding: 10px 0;
     }
@@ -633,12 +681,12 @@ body {
 }
 @media only screen and (max-width: 440px) {
     .badge-items {
-        
-/*
+
+        /*
         float: none;
         text-align: left;
         display: block;
-*/
+        */
     }
     .badge-items .tele,
     .badge-items .mail *,
@@ -667,39 +715,39 @@ body {
     #main-search .btn i{
         font-size: 12px;
     }
-    #account #signup a.dropdown-toggle{
+    #account .signup a.dropdown-toggle{
         padding-left: 0;
         padding-right: 0;
     }
-    #account #signup .btn-group.mob{
+    #account .signup .btn-group.mob{
         margin-right: 0;
     }
-    #account #signup .btn-group.mob i{
+    #account .signup .btn-group.mob i{
         margin-left: 5px;
         margin-right: 5px;
     }
     #account #cart .fa-heart{
         margin-left: 0;
     }
-    #account #signup .dropdown-menu{
+    #account .signup .dropdown-menu{
         padding-left: 10px;
         padding-right: 10px;
         margin-right: 0;
 
     }
-    #account #signup{
+    #account .signup{
         padding-right: 0;
     }
-    #account #signup a.dropdown-toggle{
+    #account .signup a.dropdown-toggle{
         width: 41px;
         text-align: center;
         display: inline-flex;
         justify-content: center;
     }
-    #account #signup .dropdown-menu{
+    #account .signup .dropdown-menu{
         margin-right: 0;
     }
-    
+
 }
 
 @media only screen and (max-width: 438px) {
@@ -785,6 +833,7 @@ body {
 .carousel-control-next,
 .carousel-control-prev{
     width: 60px;
+    /*    z-index: 2;*/
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon{
@@ -839,7 +888,19 @@ body {
         background-color: #fff;
     }
     .item-wrap .items{
-        flex: 0 0 50%;
+        flex: 0 0 48%;
+    }
+    .item-wrap .items {
+        border: 0;
+        margin: 0 2%;
+    }
+    .item-wrap .items .bximg{
+        border: 0px solid #ebebeb;
+        border-bottom: 0;
+    }
+    .item-wrap .items .bxdetail{
+        border: 1px solid #ebebeb;
+        border-top: 0;
     }
 }
 
@@ -875,10 +936,11 @@ body {
     font-size: 18px;
 }
 .bxdetail .add-to-cart:hover{
-    color: #227fe6;
+    /*    color: #227fe6;*/
 }
 .bxdetail .add-to-cart.added{
-    color: #227fe6;
+    color: #fcf302;
+    /*    background-color: #fcf302;*/
 }
 .bxdetail .offer{
     color: #227fe6;
@@ -1144,7 +1206,7 @@ body {
     #featured-products .item-wrap .items{
         margin: 0;
         width: 25%;
-        margin: 0 1% 2% 1%;
+        margin: 0 2% 4% 2%;
         width: 48%;
         flex: auto;
     }
@@ -1179,6 +1241,16 @@ body {
         margin-right: 0;
         font-size: 10px;
         padding: 5px;
+    }
+    .bxdetail .price label{
+
+        font-size: 13px;
+        margin-right: 1px;
+
+    }
+    .bxdetail .discount{
+        font-size: 10px;
+        padding: 2px;
     }
 }
 
@@ -1627,11 +1699,21 @@ body {
     }
 }
 
+.btn-compare{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 7px 20px;
+    z-index: 3;
+}
 .product-list{
     display: flex;
     flex-wrap: wrap;
     padding: 0px 7px 7px 7px;
-    justify-content: space-around
+    justify-content: space-around;
+    position: relative;
 }
 .product-list .items{
     padding: 7px;
@@ -1685,6 +1767,60 @@ body {
 }
 
 /* ---- */
+
+/*Compare Favorites*/
+.compare h1{
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+    line-height: 1.2;
+}
+.compare-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /*    width: 100%;*/
+    padding: 15px;
+    background-color: #fff;
+    margin: 0px 0 0 0;
+}
+.compare-list .items{
+    margin: 15px;
+    flex: 0 0 1;
+    text-align: center;
+}
+.compare-list .bximg img{
+    width: 200px;
+}
+.compare-list .items h2{
+    border: 1px solid #ebebeb;
+    border-top: 0;
+    margin: 0 0 15px 0;
+    background-color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    color: #555;
+}
+.compare-list .table-responsive{
+    flex: 0 0 100%;
+}
+.compare-list .table{
+    margin: 15px 0 0 0;
+}
+.compare-list .table th{
+    font-weight: 500;
+    font-size: 14px;
+}
+.compare-list .table td{
+    font-size: 14px;
+}
 
 /* Product Detail */
 .product-pad{
@@ -2509,4 +2645,18 @@ margin-left: 0;
     border: 0;
     cursor: pointer;
     margin-right: -25px;
+}
+
+@media only screen and (max-width: 440px) {
+    #feed-wrap{
+        width: 30px;
+    }
+    #feed-wrap button.popper2{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        overflow: hidden;
+        margin-right: 0;
+        margin-left: -25px;
+    }
 }

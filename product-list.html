@@ -112,14 +112,17 @@
                             </div>
                         </div>
                     </div>
-                    <div id="account"><span id="signup">
+                    <div id="account">
+                        <span class="signup">
 
                         <div class="btn-group">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a id="signInPanel" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Login &amp; Signup
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-right">
+
+                           <div class="dropdown-menu dropdown-menu-right signInDiv">
+                               
                                 <h1>Sign In</h1>
                                 <div class="form-group">
                                     <label for="exampleDropdownFormEmail2">Email</label>
@@ -137,18 +140,71 @@
                                 </div>
                                 <div class="btn-panel"><button type="submit" class="btn btn-primary btn-block">Sign in</button>
                                     <a href="javascript:void(0)" class="btn btn-link">New Customer?</a>
-                                    <button type="submit" class="btn btn-secondary btn-block">Create Your Account</button></div>
+                                    <a href="javascript:void(0)" id="showCreateAccount" class="btn btn-secondary btn-block">Create Your Account</a>
+
+                                    
+                                </div></div>
+                           
+                            <div class="dropdown-menu dropdown-menu-right showCreateAccountDiv">
+                              
+                              
+                                <h1>Create Account</h1>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormEmail2">Name</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword2">Email</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword2">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Minimum 8 Characters">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword2">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                </div>
+                                
+                                <div class="btn-panel">
+                                    
+                                    <a href="javascript:void(0)" id="showThanks" class="btn btn-primary btn-block">Create Your Account</a>
+                                    <p>I agree to the <a href="#">Terms &amp; Conditions of use</a></p>
+                                    <p>Already have an account? <a href="#" id="showSignIn">Sign In</a></p>    
+                                    </div>
+                            </div>
+
+                                   
+                                   <div class="dropdown-menu dropdown-menu-right showThanksDiv">
+                                    
+                                    <h1>Create Account</h1>
+                                <div class="thanks-signup">
+                                <p>Thank You. We have sent you an account activation email.</p>
+                                <p>Please check your email, activate and enjoy shopping with us!</p>
+                                <p>For any help, please <a href="#helpline">click here</a></p>
+                                </div></div>
+                               
+                               
+                                
+                                
+                                
+                                
                             </div>
 
 
 
 
 
-                        </div>
+
+
+                        
+
                         <div class="btn-group mob">
 
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
+                            <a id="signInPanelMob" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i></a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right signInDivMob">
+                               
                                 <h1>Sign In</h1>
                                 <div class="form-group">
                                     <label for="exampleDropdownFormEmail2">Email</label>
@@ -166,8 +222,49 @@
                                 </div>
                                 <div class="btn-panel"><button type="submit" class="btn btn-primary btn-block">Sign in</button>
                                     <a href="javascript:void(0)" class="btn btn-link">New Customer?</a>
-                                    <button type="submit" class="btn btn-secondary btn-block">Create Your Account</button></div>
+                                    <a href="javascript:void(0)" id="showCreateAccountMob" class="btn btn-secondary btn-block">Create Your Account</a>
+
+                                    
+                                </div></div>
+                           
+                            <div class="dropdown-menu dropdown-menu-right showCreateAccountDivMob">
+                              
+                              
+                                <h1>Create Account</h1>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormEmail2">Name</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword2">Email</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword2">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Minimum 8 Characters">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword2">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                </div>
+                                
+                                <div class="btn-panel">
+                                    
+                                    <a href="javascript:void(0)" id="showThanksMob" class="btn btn-primary btn-block">Create Your Account</a>
+                                    <p>I agree to the <a href="#">Terms &amp; Conditions of use</a></p>
+                                    <p>Already have an account? <a href="#" id="showSignInMob">Sign In</a></p>    
+                                    </div>
                             </div>
+
+                                   
+                                   <div class="dropdown-menu dropdown-menu-right showThanksDivMob">
+                                    
+                                    <h1>Create Account</h1>
+                                <div class="thanks-signup">
+                                <p>Thank You. We have sent you an account activation email.</p>
+                                <p>Please check your email, activate and enjoy shopping with us!</p>
+                                <p>For any help, please <a href="#helpline">click here</a></p>
+                                </div></div>
 
 
 
@@ -436,6 +533,8 @@
                                 </form></div>
                         </div>
                         <div class="product-list">
+                           
+                           <a class="btn btn-primary btn-compare" href="compare.html">Compare Favorites(2)</a>
                             
                                         <div class="items">
                                             <div class="bximg">
@@ -453,7 +552,7 @@
                                                     <i class="far fa-star off"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart added"><i class="far fa-heart"></i></a>
+                                                    <a href="javascript:void(0)" class="add-to-cart added"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -474,7 +573,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
+                                                    <a href="javascript:void(0)" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -495,7 +594,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart added"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -516,7 +615,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -539,7 +638,7 @@
                                                     <i class="far fa-star off"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart added"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -560,7 +659,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -581,7 +680,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart added"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart added"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -602,7 +701,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -625,7 +724,7 @@
                                                     <i class="far fa-star off"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart added"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -646,7 +745,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -667,7 +766,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart added"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -688,7 +787,7 @@
                                                     <i class="far fa-star"></i>
                                                 </span>
                                                 <div class="price">
-                                                    <a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="add-to-cart"><i class="fas fa-heart"></i></a>
                                                     <label class="offer">$15</label>
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
@@ -871,5 +970,103 @@
                 })
             })
         </script>
+        
+         <!--Mobile Nav-->
+        <script>
+            $(function () {
+                'use strict'
+
+                $('[data-toggle="offcanvas"]').on('click', function () {
+                    $('.offcanvas-collapse').toggleClass('open'),
+                        $('.navbar-toggler').toggleClass('clicked')
+                })
+            })
+        </script>
+        
+        <!--       Login & Signup-->
+       
+       <script>
+
+            // VERSION WITH BOOTSTRAP 4 : https://codepen.io/seltix/pen/XRPrwM
+
+            jQuery('.dropdown-toggle').on('click', function (e) {
+                $(this).next().toggle();
+            });
+            jQuery('.dropdown-menu.keep-open').on('click', function (e) {
+                e.stopPropagation();
+            });
+            
+        </script>
+       
+        <script>
+            $(document).ready(function(){
+                $("#showSignIn").click(function(){
+                    $("div.signInDiv").show();
+                    $("div.showCreateAccountDiv").hide();
+                    $("div.showThanksDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+                $("#showCreateAccount").click(function(){
+                    $("div.showCreateAccountDiv").show();
+                    $("div.signInDiv").hide();
+                    $("div.showThanksDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showCreateAccountDiv').toggleClass('noDrop');
+                    
+                });
+                $("#showThanks").click(function(){
+                    $("div.showThanksDiv").show();
+                    $("div.showCreateAccountDiv").hide();
+                    $("div.signInDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showThanksDiv').toggleClass('noDrop');
+                    
+                });
+                $("#signInPanel").click(function(){
+                    $("div.signInDiv").show();
+                    $("div.showCreateAccountDiv").hide();
+                    $("div.showThanksDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+            });
+            
+            $(document).ready(function(){
+                $("#showSignInMob").click(function(){
+                    $("div.signInDivMob").show();
+                    $("div.showCreateAccountDivMob").hide();
+                    $("div.showThanksDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+                $("#showCreateAccountMob").click(function(){
+                    $("div.showCreateAccountDivMob").show();
+                    $("div.signInDivMob").hide();
+                    $("div.showThanksDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showCreateAccountDiv').toggleClass('noDrop');
+                    
+                });
+                $("#showThanksMob").click(function(){
+                    $("div.showThanksDivMob").show();
+                    $("div.showCreateAccountDivMob").hide();
+                    $("div.signInDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showThanksDiv').toggleClass('noDrop');
+                    
+                });
+                $("#signInPanelMob").click(function(){
+                    $("div.signInDivMob").show();
+                    $("div.showCreateAccountDivMob").hide();
+                    $("div.showThanksDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+            });
+            
+        </script>
+        
+        
     </body>
 </html>
