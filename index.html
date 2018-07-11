@@ -97,14 +97,14 @@
                                 </select>
                             </span>
                         </div>
-                        <h4>Marketing Announcements</h4>
+                        <h4><marquee direction="left">Marketing Announcements</marquee></h4>
                     </div>
                 </div>
             </div>
             <div class="header-panel">
                 <div class="container">
-                    <div id="logo"><a href="index.html" title="Baan Baan"><img src="images/logo.jpg" alt="Baan Baan"></a></div>
-                    <div id="main-search">
+                    <div class="logo"><a href="index.html" title="Baan Baan"><img src="images/logo.jpg" alt="Baan Baan"></a></div>
+                    <div class="main-search">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search Products.." aria-label="Search Products, Photos.." aria-describedby="basic-addon2">
                             <div class="input-group-append">
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="account">
+                    <div class="account">
                         <span class="signup">
 
                         <div class="btn-group">
@@ -272,7 +272,7 @@
 
                         </div>
                         </span>
-                        <span id="cart">
+                        <span class="cart">
                             <a href="#"><i class="far fa-heart"></i></a>
                             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                         </span>
@@ -282,7 +282,7 @@
         </div>
 
 
-        <div id="menu_area" class="menu-area">
+        <div class="menu_area" class="menu-area">
             <div class="container">
                 <div class="">
 
@@ -355,7 +355,7 @@
                 </div>
             </div>
         </div>   
-        <div id="spotlite">
+        <div class="spotlite">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -386,7 +386,7 @@
 
         <main role="main" class="main-content">
 
-            <div id="feed-wrap">
+            <div class="feed-wrap">
 
                 <div class="bxfeed">
 
@@ -433,7 +433,7 @@
 
             </div>
 
-            <div id="best-deals" class="slid">
+            <div class="best-deals slid">
                 <div class="container">
                     <h1><span class="title">Today's Best Deals<mark class="timer"><i class="far fa-clock"></i><small id="date_time"></small></mark></span><a href="product-list.html" class="see-all">See All</a>
 
@@ -850,7 +850,7 @@
                 </div>
             </div>
 
-            <div id="new-arrivals" class="slid">
+            <div class="new-arrivals slid">
                 <div class="container">
                     <h1><span class="title">New Arrivals<mark class="timer" style="display: none;"><i class="far fa-clock"></i>19:43:40</mark></span><a href="product-list.html" class="see-all">See All</a></h1>
 
@@ -1227,7 +1227,7 @@
                 </div>
             </div>
 
-            <div id="featured-products" class="slid">
+            <div class="featured-products slid">
                 <div class="container">
                     <h1><span class="title">Featured Products<mark class="timer" style="display: none;"><i class="far fa-clock"></i>19:43:40</mark></span><a href="product-list.html" class="see-all">See All</a></h1>
 
@@ -1489,7 +1489,7 @@
 
 
 
-        <div id="chat-wrap">
+        <div class="chat-wrap">
             <div class="container">
                 <button class="popper" data-toggle="popover"><i class="fas fa-comments"></i></button> 
                 <div class="popper-content" style="display: none;">
@@ -1511,7 +1511,7 @@
 
 
 
-        <footer id="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="foot-pad">
                     <ul>
@@ -1601,7 +1601,7 @@
         <script>
             $('.popper').popover({
                 placement: 'top',
-                container: '#chat-wrap .container',
+                container: '.chat-wrap .container',
                 html: true,
                 content: function () {
                     return $(this).next('.popper-content').html();
@@ -1612,7 +1612,7 @@
         <script>
             $('.popper2').popover({
                 placement: 'left',
-                container: '#feed-wrap',
+                container: '.feed-wrap',
                 html: true,
                 content: function () {
                     return $(this).next('.popper2-content').html();

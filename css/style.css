@@ -365,6 +365,7 @@ body.modal-open {
     float: right;
     position: relative;
     z-index: 2222;
+    background-color: #227fe6;
 }
 .badge-items i{
     color:#fff;
@@ -420,23 +421,23 @@ body.modal-open {
     justify-content: space-between;
     align-items: center;
 }
-#logo{
+.logo{
     /*    flex-grow: 1;*/
     flex-basis: 15%;
     margin:5px 20px 5px 0;
 }
 
 /* Main Search */
-#main-search{
+.main-search{
     flex: 1;
     margin: 0 0;
 }
-#main-search .form-control{
+.main-search .form-control{
     transition: all 0.5s;
 }
-#main-search .form-control:focus{}
-#main-search .form-control,
-#main-search .btn{
+.main-search .form-control:focus{}
+.main-search .form-control,
+.main-search .btn{
     border:1px solid #c4c4c4;
     outline:none!important;
     box-shadow: none!important;
@@ -444,45 +445,45 @@ body.modal-open {
     font-size: 13px;
     color: #999;
 }
-#main-search .btn i{
+.main-search .btn i{
     color: #227fe6;
     font-size: 16px;
 }
-#main-search .btn:hover{
+.main-search .btn:hover{
     background-color: #c4c4c4;
 }
-#main-search .btn:hover i{
+.main-search .btn:hover i{
     color: #eee;
 }
-#main-search ::-webkit-input-placeholder { /* Chrome */
+.main-search ::-webkit-input-placeholder { /* Chrome */
     color: #cac8c9;
 }
-#main-search ::-moz-placeholder { /* Firefox 19+ */
+.main-search ::-moz-placeholder { /* Firefox 19+ */
     color: #cac8c9;
     opacity: 1;
 }
 
-#account{
+.account{
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-self: stretch;
 }
-#account i{
+.account i{
     color: #c4c4c4;
     margin-left: 10px;
     font-size: 20px;
     vertical-align: middle;
 }
-#account i:hover{
+.account i:hover{
     color: #999;
 }
-#account .signup{
+.account .signup{
     align-self: center;
     padding-right: 5px;
     text-align: right;
 }
-#account .signup a.dropdown-toggle{
+.account .signup a.dropdown-toggle{
     color: #999;
     font-size: 14px;
     font-weight: 500;
@@ -490,17 +491,17 @@ body.modal-open {
     cursor: pointer;
     padding: 15px;
 }
-#account .signup a.dropdown-toggle::after{
+.account .signup a.dropdown-toggle::after{
     display: none;
 }
-#account .signup .show a.dropdown-toggle,
-#account .signup .show a.dropdown-toggle i,
-#account .signup.actv a.dropdown-toggle,
-#account .signup.actv a.dropdown-toggle i{
+.account .signup .show a.dropdown-toggle,
+.account .signup .show a.dropdown-toggle i,
+.account .signup.actv a.dropdown-toggle,
+.account .signup.actv a.dropdown-toggle i{
     background-color: #555;
     color: #fff;
 }
-#account .signup .dropdown-menu{
+.account .signup .dropdown-menu{
     background-color: #555;
     padding: 15px;
     color: #fff;
@@ -508,72 +509,72 @@ body.modal-open {
     margin-right: -1px;
 }
 
-#account .signup h1{
+.account .signup h1{
     margin: 0 0 10px 0;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
 }
-#account .signup .form-group{
+.account .signup .form-group{
     margin-bottom: 10px;
 }
-#account .signup label{
+.account .signup label{
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-#account .signup label a{
+.account .signup label a{
     color: #007bff;
     font-size: 11px;
     text-decoration: none;
 }
-#account .signup .form-control{
+.account .signup .form-control{
     font-size: 13px;
     width: 200px;
 }
-#account .signup .btn-panel{
+.account .signup .btn-panel{
     text-align: center;
     margin-top: 10px;
 }
 
-#account .signup .btn-panel p{
+.account .signup .btn-panel p{
     margin: 0;
     font-size: 12px;
     text-align: left;
     line-height: 1.2;
     margin-top: 10px;
 }
-#account .signup .btn-panel p a{
+.account .signup .btn-panel p a{
     text-decoration: none;
 }
 
-#account .signup .thanks-signup{
+.account .signup .thanks-signup{
     margin:0;
     width: 200px;
 }
-#account .signup .thanks-signup p{
+.account .signup .thanks-signup p{
     margin-bottom: 10px;
 }
-#account .signup .thanks-signup p:last-child{
+.account .signup .thanks-signup p:last-child{
     margin-bottom: 0;
 }
 
-#account .signup .btn-link{
+.account .signup .btn-link{
     color: #fff;
     font-size: 13px;
     text-decoration: none;
 }
-#account .signup .btn-link:hover{
+.account .signup .btn-link:hover{
     color: #ccc;
 }
 
-#account .signup .btn-group.mob{
+.account .signup .btn-group.mob{
     display: none;
 }
 
-#account #cart{
+.account .cart{
     border-left: 1px solid #c4c4c4;
     display: flex;
     align-items: center;
@@ -603,6 +604,9 @@ body.modal-open {
     .mainmenu{
         display: none;
     }
+    .badge-panel h4{
+        z-index: 2221;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -630,35 +634,35 @@ body.modal-open {
     .mobsignup a:hover{
         color: #ccc;
     }
-    #main-search{
+    .main-search{
         flex: auto;
         margin-right: 20px;
     }
-    #account .signup .btn-group{
+    .account .signup .btn-group{
         display: none;
     }
-    #account .signup .btn-group.mob{
+    .account .signup .btn-group.mob{
         display: block;
         margin-right: 0;
     }
-    #main-search{
+    .main-search{
         margin-right: 10px;
     }
 
-    #account .signup a.dropdown-toggle, #account .signup a.dropdown-toggle i{
+    .account .signup a.dropdown-toggle, .account .signup a.dropdown-toggle i{
 
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
     }
-    #account .signup a.dropdown-toggle{
+    .account .signup a.dropdown-toggle{
         width: 51px;
         text-align: center;
         display: inline-flex;
         justify-content: center;
 
     }
-    #account .signup .dropdown-menu{
+    .account .signup .dropdown-menu{
         margin-right: 0;
     }
     
@@ -710,51 +714,51 @@ body.modal-open {
         margin-left: 0;
     }
 
-    #logo img{
+    .logo img{
         width: 56px;
 
     }
-    #main-search{
+    .main-search{
         margin-right: 5px;
     }
-    #main-search .form-control, #main-search .btn{
+    .main-search .form-control, .main-search .btn{
         padding-left: 5px;
         padding-right: 5px;
         font-size: 12px;
     }
-    #main-search .btn i{
+    .main-search .btn i{
         font-size: 12px;
     }
-    #account .signup a.dropdown-toggle{
+    .account .signup a.dropdown-toggle{
         padding-left: 0;
         padding-right: 0;
     }
-    #account .signup .btn-group.mob{
+    .account .signup .btn-group.mob{
         margin-right: 0;
     }
-    #account .signup .btn-group.mob i{
+    .account .signup .btn-group.mob i{
         margin-left: 5px;
         margin-right: 5px;
     }
-    #account #cart .fa-heart{
+    .account .cart .fa-heart{
         margin-left: 0;
     }
-    #account .signup .dropdown-menu{
+    .account .signup .dropdown-menu{
         padding-left: 10px;
         padding-right: 10px;
         margin-right: 0;
 
     }
-    #account .signup{
+    .account .signup{
         padding-right: 0;
     }
-    #account .signup a.dropdown-toggle{
+    .account .signup a.dropdown-toggle{
         width: 41px;
         text-align: center;
         display: inline-flex;
         justify-content: center;
     }
-    #account .signup .dropdown-menu{
+    .account .signup .dropdown-menu{
         margin-right: 0;
     }
 
@@ -854,11 +858,11 @@ body.modal-open {
     height: 30px;
 }
 
-#spotlite .carousel-control-next,
-#spotlite .carousel-control-prev{
+.spotlite .carousel-control-next,
+.spotlite .carousel-control-prev{
     width: 15%;
 }
-#spotlite .carousel-indicators li{
+.spotlite .carousel-indicators li{
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -867,7 +871,7 @@ body.modal-open {
     margin-left: 4px;
     margin-right: 4px;
 }
-#spotlite .carousel-indicators .active{
+.spotlite .carousel-indicators .active{
     background-color: #227fe6;
 }
 
@@ -884,11 +888,11 @@ body.modal-open {
     margin: 0 10px;
 }
 
-#new-arrivals .item-wrap{
+.new-arrivals .item-wrap{
     background-color: #fdfdfd;
 }
-#new-arrivals .actual,
-#new-arrivals .discount{
+.new-arrivals .actual,
+.new-arrivals .discount{
     display: none;
 }
 
@@ -969,7 +973,7 @@ body.modal-open {
 }
 
 /* Footer */
-#footer{
+.footer{
     background-color: #ececee;
     margin-top: 0px;
     /*
@@ -977,31 +981,31 @@ body.modal-open {
     z-index: -2;
     */
 }
-#footer .foot-pad{
+.footer .foot-pad{
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
     padding: 25px 0;
 }
 
-#footer ul{
+.footer ul{
     margin: 0 15px;
     padding: 0;
 }
-#footer ul:first-child{
+.footer ul:first-child{
     margin-left: 0;
 }
-#footer ul:last-child{
+.footer ul:last-child{
     margin-right: 0;
 }
-#footer ul li{
+.footer ul li{
     list-style: none;
     text-transform: capitalize;
     font-size: 14px;
     color: #999;
     margin-bottom: 5px;
 }
-#footer ul li span{
+.footer ul li span{
     width: 20px;
     display: inline-flex;
     border: 1px solid #999;
@@ -1009,18 +1013,18 @@ body.modal-open {
     padding: 2px 0;
     margin-right: 7px;
 }
-#footer ul li span i{
+.footer ul li span i{
     padding: 0;
     margin: 0 auto;
 }
-#footer ul li a{
+.footer ul li a{
     color: #999;
     text-decoration: none;
 }
-#footer ul li a:hover{
+.footer ul li a:hover{
     color: #555;
 }
-#footer ul li h3{
+.footer ul li h3{
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
@@ -1029,13 +1033,13 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 992px) {
-    #footer .foot-pad{
+    .footer .foot-pad{
         flex-direction: row;
         padding-top: 0;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    #footer ul{
+    .footer ul{
         margin: 0;
         margin-top: 25px;
         width: 33.3%;
@@ -1043,18 +1047,18 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 767px) {
-    #footer ul{
+    .footer ul{
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    #footer ul{
+    .footer ul{
         width: 100%;
     }
 }
 
-#footer .rights{
+.footer .rights{
     background-color: #999;
     color: #fff;
     text-align: center;
@@ -1090,11 +1094,11 @@ body.modal-open {
 }
 
 /* Chat Pop */
-#chat-wrap{
+.chat-wrap{
     margin: 50px 0;
     text-align: right;
 }
-#chat-wrap .popper{
+.chat-wrap .popper{
     background-color: #fff;
     border: 2px solid #227fe6;
     border-radius: 50%;
@@ -1106,20 +1110,20 @@ body.modal-open {
     cursor: pointer;
     outline: none!important;
 }
-#chat-wrap .popper-content .card{
+.chat-wrap .popper-content .card{
     width: 200px;
 }
-#chat-wrap .popover-body{
+.chat-wrap .popover-body{
     background-color: #ececee;
     padding: 0;
 }
-#chat-wrap .bxchat{
+.chat-wrap .bxchat{
     width: 250px;
 }
-#chat-wrap .bxchat .head{
+.chat-wrap .bxchat .head{
     background-color: #333;
 }
-#chat-wrap .bxchat .head h2{
+.chat-wrap .bxchat .head h2{
     margin: 0;
     text-align: center;
     font-size: 16px;
@@ -1127,15 +1131,15 @@ body.modal-open {
     padding: 7px;
     font-weight: 400;
 }
-#chat-wrap .bxchat .head h2 span{
+.chat-wrap .bxchat .head h2 span{
     font-size: 13px;
     font-weight: 400;
     color: #bbb;
 }
-#chat-wrap .bxchat .pad{
+.chat-wrap .bxchat .pad{
     padding: 50px 15px;
 }
-#chat-wrap .bxchat .btn{
+.chat-wrap .bxchat .btn{
     color: #fff;
     border: 1px solid #fff;
     border-radius: 1px;
@@ -1143,13 +1147,13 @@ body.modal-open {
     text-transform: uppercase;
     font-size: 12px;
 }
-#chat-wrap .bxchat .btn:hover{
+.chat-wrap .bxchat .btn:hover{
     background-color: #559ae8;
     outline: none!important;
 }
 
-#chat-wrap .bs-popover-auto[x-placement^=top] .arrow::after,
-#chat-wrap .bs-popover-top .arrow::after{
+.chat-wrap .bs-popover-auto[x-placement^=top] .arrow::after,
+.chat-wrap .bs-popover-top .arrow::after{
     border-top-color:#ececee;
 }
 
@@ -1175,33 +1179,33 @@ body.modal-open {
 
 /*Quick Detail View*/
 
-#featured-products .bximg{
+.featured-products .bximg{
     position: relative;
 }
-#featured-products .bximg .btn{
+.featured-products .bximg .btn{
     opacity: 0;
     transition: all .25s;
     border: 1px solid #fff!important;
     font-size: 11px;
 }
 
-#featured-products .item-wrap{
+.featured-products .item-wrap{
     padding: 25px 15px;
 }
-#featured-products .modal-body{
+.featured-products .modal-body{
     padding-top: 0;
 }
 
-#featured-products .items:hover .bximg .btn{
+.featured-products .items:hover .bximg .btn{
     opacity: 1;
 }
-#featured-products .bximg .add-cart{
+.featured-products .bximg .add-cart{
     position: absolute;
     left:0;
     top: 45%;
     margin-left: 10px;
 }
-#featured-products .bximg .quick-launch{
+.featured-products .bximg .quick-launch{
     position: absolute;
     right:0;
     top: 45%;
@@ -1209,30 +1213,30 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 992px) {
-    #featured-products .item-wrap{
+    .featured-products .item-wrap{
         padding: 0;
         flex-wrap: wrap;
     }
-    #featured-products .item-wrap .items{
+    .featured-products .item-wrap .items{
         margin: 0;
         width: 25%;
         margin: 0 2% 4% 2%;
         width: 48%;
         flex: auto;
     }
-    #featured-products .item-wrap .items:nth-child(odd){
+    .featured-products .item-wrap .items:nth-child(odd){
         margin-left: 0;
     }
-    #featured-products .item-wrap .items:nth-child(even){
+    .featured-products .item-wrap .items:nth-child(even){
         margin-right: 0;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    #featured-products .item-wrap{
+    .featured-products .item-wrap{
         /*        flex-wrap: wrap;*/
     }
-    #featured-products .item-wrap .items{
+    .featured-products .item-wrap .items{
         /*
         margin: 1% 1% 1% 1%;
         width: 48%;
@@ -1242,12 +1246,12 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 440px) {
-    #featured-products .bximg .add-cart{
+    .featured-products .bximg .add-cart{
         margin-left: 0;
         font-size: 10px;
         padding: 5px;
     }
-    #featured-products .bximg .quick-launch{
+    .featured-products .bximg .quick-launch{
         margin-right: 0;
         font-size: 10px;
         padding: 5px;
@@ -1495,7 +1499,7 @@ body.modal-open {
 .content-wrap{
     background-color: #f7f7f7;
 }
-.content-wrap + #chat-wrap{
+.content-wrap + .chat-wrap{
     background-color: #f7f7f7;
     margin: 0;
     padding: 50px 0;
@@ -1507,7 +1511,7 @@ body.modal-open {
     align-items: stretch;
 }
 
-#filterpanel{
+.filterpanel{
     flex: 0 0 220px;
     background-color: #fff;
     margin-right: 7px;
@@ -1516,7 +1520,7 @@ body.modal-open {
 .filter-pad{
     padding: 10px;
 }
-#filterpanel h1{
+.filterpanel h1{
     margin: 0;
     background-color: #e1e1e1;
     text-transform: uppercase;
@@ -1525,7 +1529,7 @@ body.modal-open {
     color: #555;
     padding: 10px;
 }
-#filterpanel .clearall{
+.filterpanel .clearall{
     float: right;
     text-decoration: none;
     text-transform: capitalize;
@@ -1533,16 +1537,16 @@ body.modal-open {
     font-weight: 400;
     color: #777;
 }
-#filterpanel .clearall:hover{
+.filterpanel .clearall:hover{
     color: #555;
 }
-#filterpanel .card{
+.filterpanel .card{
     border: 0;
 }
-#filterpanel .card-header{
+.filterpanel .card-header{
     padding: 0;
 }
-#filterpanel .card-header .btn{
+.filterpanel .card-header .btn{
     background-color: #fff;
     border-radius: 0;
     border: 0;
@@ -1554,54 +1558,54 @@ body.modal-open {
     color: #555;
     padding: 7px 0;
 }
-#filterpanel .card-header .btn .fas{
+.filterpanel .card-header .btn .fas{
     float: right;
     font-size: 11px;
     color: #999;
     margin-top: 5px;
 }
 
-#filterpanel .card-header .btn .fa-minus{
+.filterpanel .card-header .btn .fa-minus{
     display: block;
 }
-#filterpanel .card-header .btn .fa-plus{
+.filterpanel .card-header .btn .fa-plus{
     display: none;
 }
-#filterpanel .card-header .btn.collapsed .fa-plus{
+.filterpanel .card-header .btn.collapsed .fa-plus{
     display: block;
 }
-#filterpanel .card-header .btn.collapsed .fa-minus{
+.filterpanel .card-header .btn.collapsed .fa-minus{
     display: none;
 }
 
-#filterpanel .card-body{
+.filterpanel .card-body{
     padding: 5px 0;
 }
 
 /* Custom Checkbox */
-#filterpanel .custom-checkbox{
+.filterpanel .custom-checkbox{
     margin: 5px 0;
 }
-#filterpanel .custom-control-label::before,
-#filterpanel .custom-control-label::after{
+.filterpanel .custom-control-label::before,
+.filterpanel .custom-control-label::after{
     border-radius: 1px;
     border: 1px solid #c4c4c4;
 }
-#filterpanel .custom-control-label::before{
+.filterpanel .custom-control-label::before{
     background-color: #fff;
 }
-#filterpanel .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+.filterpanel .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
     background-color: #c4c4c4;
 
 }
-#filterpanel .custom-control-label{
+.filterpanel .custom-control-label{
     font-size: 14px;
     text-transform: capitalize;
     color: #999;
     line-height: 17px;
 }
 
-#filterpanel .col-badge{
+.filterpanel .col-badge{
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -1618,7 +1622,7 @@ body.modal-open {
 
 
 
-#rightpanel{
+.rightpanel{
     flex: 4;
     background-color: #fff;
     margin-left: 7px;
@@ -1649,11 +1653,11 @@ body.modal-open {
     .content-pad{
         flex-direction: column;
     }
-    #filterpanel{
+    .filterpanel{
         flex: 0 0 100%;
         margin: 0;
     }
-    #rightpanel{
+    .rightpanel{
         flex: 1;
         margin: 0;
     }
@@ -1673,25 +1677,25 @@ body.modal-open {
     }
 }
 
-#bxsort{
+.bxsort{
     flex: 1;
     border: 1px solid #ebebeb;
     border-radius: 1px;
 }
-#bxsort .form-group{
+.bxsort .form-group{
     margin: 0 4px 0 0;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#bxsort .form-group label{
+.bxsort .form-group label{
     margin: 0;
     font-size: 14px;
     color: #999;
     flex-basis: 80px;
     margin-left: 10px;
 }
-#bxsort .form-control{
+.bxsort .form-control{
     border: 0;
     font-size: 14px;
     border-radius: 0;
@@ -1701,10 +1705,10 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 767px) {
-    #bxsort .form-group label{
+    .bxsort .form-group label{
         font-size: 11px;
     }
-    #bxsort .form-control{
+    .bxsort .form-control{
         font-size: 11px;
     }
 }
@@ -1862,15 +1866,15 @@ margin-right: 0;
 margin-left: 0;
 }
 */
-#product-detail .product-multi-carousel{
+.product-detail .product-multi-carousel{
     margin: 0;
 }
-#product-detail .product-desc{
+.product-detail .product-desc{
     margin: 0;
 }
 
 @media only screen and (max-width: 567px) {
-    #product-detail .product-desc{
+    .product-detail .product-desc{
         min-width: 450px;
     }
 }
@@ -1974,39 +1978,39 @@ margin-left: 0;
     }
 }
 
-#nav-home h2{
+.nav-home h2{
     color: #555;
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-#nav-home h3{
+.nav-home h3{
     color: #555;
     font-size: 14px;
     font-weight: 500;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-#nav-home p{
+.nav-home p{
     font-size: 14px;
     color: #777;
     margin-bottom: 10px;
 }
-#nav-home ul{
+.nav-home ul{
     margin: 0;
     padding: 0;
     font-size: 14px;
     color: #777;
 }
-#nav-home ul li{
+.nav-home ul li{
     margin: 0;
     padding: 0;
     display: block;
     list-style: none;
     line-height: 25px;
 }
-#nav-home ul li strong{
+.nav-home ul li strong{
     font-weight: 500;
 }
 
@@ -2038,7 +2042,7 @@ margin-left: 0;
     border-bottom-color: #ebebeb;
 }
 
-#tab-reviews .bx-rating-pad{
+.tab-reviews .bx-rating-pad{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -2046,13 +2050,13 @@ margin-left: 0;
     padding: 10px 0px;
 }
 
-#tab-reviews h2{
+.tab-reviews h2{
     color: #555;
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
 }
-#tab-reviews .bx-rating{
+.tab-reviews .bx-rating{
     border-right: 1px solid #ebebeb;
     display: flex;
     flex-direction: column;
@@ -2060,27 +2064,27 @@ margin-left: 0;
     flex: 1;
     padding: 15px 0;
 }
-#tab-reviews .bx-rating .rating{
+.tab-reviews .bx-rating .rating{
     color: #227fe6;
     margin: 0 0 5px 0;
 }
-#tab-reviews .bx-rating label{
+.tab-reviews .bx-rating label{
     margin: 0;
     font-size: 14px;
 }
-#tab-reviews .bx-rating mark{
+.tab-reviews .bx-rating mark{
     background-color: transparent;
     font-size: 30px;
 }
-#tab-reviews .bx-rating mark small{
+.tab-reviews .bx-rating mark small{
     font-size: 16px;
 }
-#tab-reviews .bx-btn{
+.tab-reviews .bx-btn{
     flex: 1;
     padding:0;
     text-align: center;
 }
-#tab-reviews .btn-review{
+.tab-reviews .btn-review{
     color: #fff;
     background-color: #227fe6;
 }
@@ -2088,12 +2092,12 @@ margin-left: 0;
     padding: 15px 0;
 }
 
-#customer-reviews{}
-#customer-reviews ul{
+.customer-reviews{}
+.customer-reviews ul{
     margin: 0;
     padding: 0;
 }
-#customer-reviews ul li{
+.customer-reviews ul li{
     margin: 0 0 15px 0;
     padding: 0;
     display: flex;
@@ -2101,7 +2105,7 @@ margin-left: 0;
     align-items: flex-start;
     justify-content: space-between;
 }
-#customer-reviews ul li .user-badge{
+.customer-reviews ul li .user-badge{
     margin: 0 15px 0 0;
     color: #fff;
     font-size: 18px;
@@ -2113,30 +2117,30 @@ margin-left: 0;
     line-height: 40px;
     text-align: center;
 }
-#customer-reviews ul li .rating{
+.customer-reviews ul li .rating{
     font-size: 14px;
 }
-#customer-reviews ul li .review-title{
+.customer-reviews ul li .review-title{
     font-size: 15px;
     font-weight: 500;
     margin: 3px 0 0 0;
 }
-#customer-reviews ul li .review-user{
+.customer-reviews ul li .review-user{
     font-size: 14px;
     font-weight: 400;
     color: #bbb;
     margin: 7px 0 10px 0;
 }
-#customer-reviews .badge-verify{
+.customer-reviews .badge-verify{
     margin-left: 15px;
 }
-#customer-reviews .badge-verify i{
+.customer-reviews .badge-verify i{
     margin-right: 5px;
 }
-#customer-reviews .badge-verify i::before{
+.customer-reviews .badge-verify i::before{
     color: #36d519;
 }
-#customer-reviews ul li p{
+.customer-reviews ul li p{
     margin: 0;
     color: #777;
     font-size: 14px;
@@ -2166,11 +2170,11 @@ margin-left: 0;
     font-size: 14px;
 }
 
-#qans ul{
+.qans ul{
     margin: 0;
     padding: 0;
 }
-#qans ul li{
+.qans ul li{
     margin: 0 0 15px 0;
     padding: 0;
     display: flex;
@@ -2178,19 +2182,19 @@ margin-left: 0;
     align-items: flex-start;
     justify-content: space-between;
 }
-#qans ul li:nth-child(even) {
+.qans ul li:nth-child(even) {
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 15px;
 }
-#qans ul li:last-child{
+.qans ul li:last-child{
     border-bottom: 0;
     padding-bottom: 0;
 }
-#qans ul li .quest{
+.qans ul li .quest{
     flex: 1;
     align-self: center;
 }
-#qans ul li .user-badge{
+.qans ul li .user-badge{
     margin: 0 15px 0 0;
     color: #777;
     font-size: 18px;
@@ -2204,28 +2208,28 @@ margin-left: 0;
     background-color: #f7f7f7;
 }
 
-#qans ul li .title{
+.qans ul li .title{
     font-size: 15px;
     font-weight: 500;
     margin: 0 0 0 0;
 }
-#qans ul li .ans-user{
+.qans ul li .ans-user{
     font-size: 14px;
     font-weight: 400;
     color: #bbb;
     margin: 7px 0 0 0;
 }
-#qans ul li .ans-desc{
+.qans ul li .ans-desc{
     margin: 0;
     color: #777;
     font-size: 14px;
 }
 
-#nav-qans .bxpagn .pagination{
+.nav-qans .bxpagn .pagination{
     margin: 0;
     padding-bottom: 0;
 }
-#nav-qans .page-item.active .page-link{
+.nav-qans .page-item.active .page-link{
     background-color: #e30047;
 }
 
@@ -2238,36 +2242,36 @@ margin-left: 0;
 
 
 
-#tab-reviews .bxpagn .pagination{
+.tab-reviews .bxpagn .pagination{
     margin: 0;
     padding-bottom: 0;
 }
-#tab-reviews .page-item.active .page-link{
+.tab-reviews .page-item.active .page-link{
     background-color: #e30047;
 }
 
-#tab-reviews .sort-head{
+.tab-reviews .sort-head{
     margin: 0 0 15px 0;
     padding: 15px 0;
     border-bottom: 1px solid #ebebeb;
 }
-#tab-reviews .sort-head h1{
+.tab-reviews .sort-head h1{
     flex: 1;
 }
 
-#nav-instal h2{
+.nav-instal h2{
     margin: 0 0 10px 0;
     color: #555;
     font-size: 18px;
     font-weight: 500;
 }
-#nav-instal p{
+.nav-instal p{
     margin: 0 0 10px 0;
     font-size: 14px;
     color: #777;
 }
 
-#similar-items .item-wrap{
+.similar-items .item-wrap{
     padding: 0;
     background-color: #fff;
     justify-content: space-between;
@@ -2275,24 +2279,24 @@ margin-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
 }
-#similar-items .items{
+.similar-items .items{
     flex: 0 0 49%;
     margin: 15px 0 0 0;
 }
 
 @media only screen and (max-width: 992px) {
-    #similar-items .item-wrap .items{
+    .similar-items .item-wrap .items{
         flex: 0 0 49%;
     }
 }
 
 @media only screen and (max-width: 440px) {
-    #similar-items .item-wrap .items{
+    .similar-items .item-wrap .items{
         flex: auto;
     }
 }
 
-#similar-items h1{
+.similar-items h1{
     border-bottom: 1px solid #ebebeb;
     padding: 0 0 15px 0;
     margin: 0 0 0 0;
@@ -2301,39 +2305,39 @@ margin-left: 0;
     text-transform: uppercase;
     color: #555;
 }
-#similar-items .bxdetail{
+.similar-items .bxdetail{
     background-color: #f7f7f7;
 }
 
-#recommended-products{
+.recommended-products{
     margin-bottom: 20px;
 }
 
-#required-accessories,
-#recommended-products{
+.required-accessories,
+.recommended-products{
     background-color: #fff;
 }
-#required-accessories h1,
-#recommended-products h1{
+.required-accessories h1,
+.recommended-products h1{
     border-bottom: 1px solid #ebebeb;
     padding: 15px 0;
     margin: 0 0 15px 0;
 }
-#required-accessories .item-wrap,
-#recommended-products .item-wrap{
+.required-accessories .item-wrap,
+.recommended-products .item-wrap{
     background-color: #fff;
     padding: 10px 35px 25px 35px;
 }
-#required-accessories .bxdetail h2{
+.required-accessories .bxdetail h2{
     margin-bottom: 10px;
 }
-#recommended-products .bxdetail{
+.recommended-products .bxdetail{
     background-color: #f7f7f7;
 }
-#recommended-products .bxdetail h2{
+.recommended-products .bxdetail h2{
     text-align: center;
 }
-#required-accessories .bxdetail .btn{
+.required-accessories .bxdetail .btn{
     border-radius: 1px;
     background-color: #227fe6;
     margin-top: 10px;
@@ -2341,10 +2345,10 @@ margin-left: 0;
     text-transform: uppercase;
     border: 1px solid #ebebeb;
 }
-#required-accessories .carousel-control-next,
-#required-accessories .carousel-control-prev,
-#recommended-products .carousel-control-next,
-#recommended-products .carousel-control-prev{
+.required-accessories .carousel-control-next,
+.required-accessories .carousel-control-prev,
+.recommended-products .carousel-control-next,
+.recommended-products .carousel-control-prev{
     width: 30px;
 }
 
@@ -2603,7 +2607,7 @@ margin-left: 0;
     position: relative;
 }
 
-#feed-wrap{
+.feed-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2612,39 +2616,39 @@ margin-left: 0;
     right: 0;
     z-index: 1;
 }
-#feed-wrap .popover .arrow{
+.feed-wrap .popover .arrow{
     display: none;
 }
-#feed-wrap .bs-popover-left{
+.feed-wrap .bs-popover-left{
     margin-right: 0;
     border: 0;
     border-radius: 1px;
 }
-#feed-wrap .popover-body{
+.feed-wrap .popover-body{
     background-color: #555;
     padding: 15px;
     color: #fff;
     font-size: 13px;
 }
-#feed-wrap .popover-body label{
+.feed-wrap .popover-body label{
     margin-bottom: 5px;
 }
-#feed-wrap .popover-body .form-check-label{
+.feed-wrap .popover-body .form-check-label{
     font-size: 12px;
 }
-#feed-wrap .popover-body .form-control{
+.feed-wrap .popover-body .form-control{
     font-size: 13px;
     width: 244px;
 
 }
-#feed-wrap .popover-body .form-group,
-#feed-wrap .popover-body .form-check{
+.feed-wrap .popover-body .form-group,
+.feed-wrap .popover-body .form-check{
     margin-bottom: 10px;
 }
-#feed-wrap .popover-body .btn{
+.feed-wrap .popover-body .btn{
     margin-right: 10px;
 }
-#feed-wrap button.popper2{
+.feed-wrap button.popper2{
     transform: rotate(270deg);
     width: 90px;
     height: 40px;
@@ -2658,10 +2662,10 @@ margin-left: 0;
 }
 
 @media only screen and (max-width: 440px) {
-    #feed-wrap{
+    .feed-wrap{
         width: 30px;
     }
-    #feed-wrap button.popper2{
+    .feed-wrap button.popper2{
         width: 80px;
         height: 30px;
         font-size: 12px;
