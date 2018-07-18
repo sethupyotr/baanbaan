@@ -30,7 +30,7 @@ body {
 }
     .badge-items{
         position: fixed;
-        right: 15px;
+        right: 1.5rem;
     }
     
     .mobnav{
@@ -58,21 +58,22 @@ body {
         border-radius: 0;
     }
     .mobnav .navbar-toggler i{
-        padding: 9px 15px 8px 15px;
+        padding: .9rem 1.5rem .8rem 1.5rem;
+        font-size: 2rem;
     }
     .mobnav .navbar-toggler.clicked{
         background-color: #555;
         color: #fff;
     }
     .mobnav.navbar-expand-lg .navbar-nav .nav-item{
-        border-bottom: 1px dashed #666;
+        border-bottom: .1rem dashed #666;
     }
     .mobnav.navbar-expand-lg .navbar-nav .nav-item:last-child{
         border-bottom: 0;
     }
     .mobnav.navbar-expand-lg .navbar-nav .nav-link{
         color: #fff!important;
-        padding: 15px 0;
+        padding: 1.5rem 0;
     }
     .mobnav.navbar-expand-lg .navbar-nav .nav-link:hover{
         color: #ccc!important;
@@ -87,9 +88,9 @@ body {
     }
     .mobnav .dropdown-item{
         color: #ccc;
-        padding: 7px 10px;
+        padding: .7rem 1rem;
         text-transform: uppercase;
-        font-size: 13px!important;
+        font-size: 1.3rem!important;
     }
     .mobnav .dropdown-item:focus,
     .mobnav .dropdown-item:hover{
@@ -101,18 +102,18 @@ body {
     }
     .mobnav.navbar-expand-lg .navbar-nav .nav-link.dropdown-item{
         color: #ccc!important;
-        padding: 7px 10px;
+        padding: .7rem 1rem;
         font-weight: 400;
     }
 
     .offcanvas-collapse {
         position: fixed;
-        top: 37px; /* Height of navbar */
+        top: 3.7rem; /* Height of navbar */
         bottom: 0;
         left: -100%;
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
         overflow-y: auto;
         visibility: hidden;
         background-color: #555;
@@ -139,7 +140,7 @@ body {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding-bottom: 1rem;
-    margin-top: -1px;
+    margin-top: -.1rem;
     overflow-x: auto;
     color: rgba(255, 255, 255, .75);
     text-align: center;
@@ -167,7 +168,7 @@ body {
 
 .bg-purple { background-color: #6f42c1; }
 
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: .1rem solid #e5e5e5; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
@@ -178,5 +179,8 @@ body {
 @media (min-width: 991px) {
     .mobnav{
         display: none;
+    }
+    .badge-items{
+        right: 0;
     }
 }
