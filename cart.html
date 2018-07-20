@@ -16,6 +16,28 @@
 
         <!-- Icon styles for this template -->
         <link href="css/icomoon.css" rel="stylesheet">
+        
+        <link href="css/trackpad-scroll-emulator.css" rel="stylesheet" />
+  
+  <noscript>
+    <style>
+      /**
+       * Reinstate scrolling for non-JS clients
+       * 
+       * You coud do this in a regular stylesheet, but be aware that
+       * even in JS-enabled clients the browser scrollbars may be visible
+       * briefly until JS kicks in. This is especially noticeable in IE.
+       * Wrapping these rules in a noscript tag ensures that never happens.
+       */
+      .tse-scrollable {
+        overflow-y: scroll;
+      }
+      .tse-scrollable.horizontal {
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+    </style>
+  </noscript>
 
         <!-- Icon styles for this template -->
         <link href="css/offcanvas.css" rel="stylesheet">
@@ -273,8 +295,85 @@
                             </div>
                         </span>
                         <span class="cart">
-                            <a href="#"><i class="far fa-heart"></i></a>
-                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#" class="wishlist">
+                                <i class="fas fa-heart"></i>
+                                <sub class="badge-sub">1</sub>
+                            </a>
+                            <a href="javascript:void(0)" class="shopping-cart popper-cart" data-trigger="click" data-toggle="popover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <sub class="badge-sub">2</sub>
+                            </a>
+                            <div class="popper-content" style="display: none;">
+                    <div class="my-cart pop">
+                        <h1>Your Cart (2 Items)
+                            
+                        </h1>
+                        
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><div class="bximg">
+                                            <a href="product-detail.html"><img src="images/product1.jpg" alt="Best Deal 1"></a>
+                                            </div></td>
+                                        <td>
+                                            <div class="my-cart-item-desc">
+                                                <span class="cart-item-desc">Aquatic Ocean Blue 1 X 1 Square Glass Tile</span>
+                                                <span class="cart-item-remove"><i class="far fa-trash-alt"></i> Remove</span>
+
+                                            </div>
+
+                                        </td>
+                                        
+                                        <td><label class="quantity"><select class="custom-select">
+                                            <option selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                            </select>Box</label></td>
+                                        <td>$15/Unit</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><div class="bximg">
+                                            <a href="product-detail.html"><img src="images/product2.jpg" alt="Best Deal 1"></a>
+                                            </div></td>
+                                        <td>
+                                            <div class="my-cart-item-desc">
+                                                <span class="cart-item-desc">Aquatic Ocean Blue 1 X 1 Square Glass Tile</span>
+                                                <span class="cart-item-remove"><i class="far fa-trash-alt"></i> Remove</span>
+
+                                            </div>
+
+                                        </td>
+                                        
+                                        <td><label class="quantity"><select class="custom-select">
+                                            <option selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                            </select>Box</label></td>
+                                        <td>$15/Unit</td>
+                                        
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="bx-total">
+                                            <label>Final Amount <small>(Before Tax &amp; Shipping)</small></label> <label>$45</label>
+                                        </div>
+                                        <div class="bx-btn">
+                        <button type="button" class="btn btn-primary btn-lg">Checkout</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Continue Shopping</button>
+                        </div>
+                    </div>
+                </div>
+                            
+                
                         </span>
                     </div>
                 </div>
@@ -371,6 +470,11 @@
                         <h1>my cart
                             <!--                            <button class="btn btn-shopping">Continue Shopping</button>-->
                         </h1>
+                        
+                        <div class="demo2-col">
+    <div class="tse-scrollable horizontal demo2">
+      <div class="tse-content" style="width: 747px;">
+                        
                         <div class="table-responsive">
                             <table class="table">
 
@@ -431,6 +535,37 @@
                                 </tbody>
                             </table>
                         </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+  
+
+  
+
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     </div>
                     <div class="order-summary">
                         <div class="pad">
@@ -496,7 +631,7 @@
                                     <li><label>Taxes</label> <label>$45</label></li>
                                     <li><label>Shipping Total</label> <label>$45</label></li>
                                     <li>
-                                        <div class="bxtotal">
+                                        <div class="bx-total">
                                             <label>Total</label> <label>$45</label>
                                         </div>
                                     </li>
@@ -507,7 +642,7 @@
                                         </form>
                                         </div></li>
                                     <li>
-                                       <div class="bxtotal">
+                                       <div class="bx-total">
                                             <label>Final Amount</label> <label>$55</label>
                                         </div>
                                         
@@ -651,6 +786,21 @@
 
         </script>
         <!--Custom Chat Box-->
+        
+        <!--Custom Chat Box-->
+        <script>
+            $('.popper-cart').popover({
+                placement: 'bottom',
+                container: '.account .cart',
+                html: true,
+                content: function () {
+                    return $(this).next('.popper-content').html();
+                }
+            });
+
+        </script>
+        <!--Custom Chat Box-->
+        
         <!--Prevent auto slide in Carousel-->
         <script>
             $('.carousel').carousel({
@@ -766,6 +916,48 @@
             });
 
         </script>
+        
+        
+        
+        <!-- Custom Scroll -->
+  <script src="js/jquery.trackpad-scroll-emulator.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    // Initialize scrollers.
+    $('.demo1').TrackpadScrollEmulator();
+    $('.demo2').TrackpadScrollEmulator();
+    // Demonstration of changing the vertical scroller content and dimensions.
+    $('.add-more').on('click', function(e){
+      e.preventDefault();
+      $('.demo1 .tse-content').append('<p class="odd">Additional content 1</p><p>Additional content 2</p><p p class="odd">Additional content 3</p><p>Additional content 4</p>');
+      $('.demo1').TrackpadScrollEmulator('recalculate');
+    });
+    $('.toggle-height').on('click', function(e){
+      e.preventDefault();
+      if ($('.demo1').height() === 400) {
+        $('.demo1').height(300);
+      } else {
+        $('.demo1').height(400);
+      }
+      $('.demo1').TrackpadScrollEmulator('recalculate');
+    });
+    // Demonstration of changing the horizontal scroller content and dimensions.
+    $('.add-more-horiz').on('click', function(e){
+      e.preventDefault();
+      $('.demo2 .tse-content .boxes').append('<div class="box">A</div><div class="box">B</div><div class="box">C</div><div class="box">D</div>');
+      $('.demo2').TrackpadScrollEmulator('recalculate');
+    });
+    $('.toggle-width').on('click', function(e){
+      e.preventDefault();
+      if ($('.demo2').width() === 600) {
+        $('.demo2').width(500);
+      } else {
+        $('.demo2').width(600);
+      }
+      $('.demo2').TrackpadScrollEmulator('recalculate');
+    });
+  });
+  </script>
 
     </body>
 </html>
